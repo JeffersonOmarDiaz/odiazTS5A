@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="odiazTS5A.Views.EditPerson"
+             Title="EditPerson">
+    <VerticalStackLayout>
+        <Label 
+            Text="Edicion de personas!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Grid Padding="5" RowSpacing="1" ColumnSpacing="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        <Entry x:Name="txtEditNombre" Placeholder="Ingrese el nuevo nombre"
+               Grid.Column="1"></Entry>
+
+        <Button Text="Guardar" x:Name="btnSaveNewName" Clicked="txtSaveNewName_Clicked" 
+                BackgroundColor="Green"
+                Grid.Column="2"></Button>
+
+        <Button Text="Cancelar" x:Name="btnCancelar" Clicked="btnCancelar_Clicked" 
+                Background="Red"
+                Grid.Column="3"></Button>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
